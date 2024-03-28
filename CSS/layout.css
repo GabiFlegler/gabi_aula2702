@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(66, 175, 155);
+ font-family: Arial, Helvetica, sans-serif;   
+margin: 0;
+padding: 0;
+}
+.topo{
+    background-color: aquamarine;
+    padding: 30px;
+    text-align: center;
+    color: rgb(108, 110, 148);
+    font-size: 15px;
+}
+
+.menuTopo {
+overflow: hidden;
+background-color: rgb(68, 158, 158);
+text-align: center;
+position: static;
+top: 0px;
+}
+
+.menuTopo ul{
+    display: inline-block;
+    list-style: none ;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo ul li{
+float: left;
+}
+
+.menuTopo a{
+    display: block;
+    color: rgb(15, 58, 35);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: rgb(0, 157, 255);
+    margin:0 2px ;
+    border-radius: 5px;
+
+}
+
+.menuTopo a:hover{
+    background-color: darkblue;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.corpo{
+    width: 1025px;
+    margin: 10px auto;
+
+}
+
+.corpo:after{
+    clear: both;
+    content:"";
+    display: table; 
+}
+
+
+
+.esquerda {
+    width: 75%;
+    float: left;
+}
+
+.direita{
+    width: 25%;
+    float: left;
+}
+
+.destaque{
+    background-color: rgb(58, 133, 163);
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.imagens{
+    width: 100%;
+    text-align: centro;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgb(81, 154, 122);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-wisth: 1028px) {
+.esquerda, .direita{
+width: 100%;
+padding: 10px;
+
+}
+.corpo{
+    width:100%;
+    padding: 5px;
+    margin: 0;
+}
+}
+@media screen (max-width: 400px) {
+    .menuTopo ul li, .menuTopo a {
+        float: none;
+        width: 100%;
+
+    }
+    
+}
